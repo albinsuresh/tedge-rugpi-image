@@ -1,1 +1,6 @@
+#:schema https://raw.githubusercontent.com/rugix/rugix-bakery/refs/tags/v0.9.0/schemas/rugix-bakery-recipe.schema.json
 description = "User packages"
+
+dependencies = [
+    "core/pkg-update",
+]

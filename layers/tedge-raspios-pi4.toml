@@ -1,0 +1,10 @@
+#:schema https://raw.githubusercontent.com/rugix/rugix-bakery/refs/tags/v0.9.0/schemas/rugix-bakery-layer.schema.json
+parent = "tedge-raspios"
+
+recipes = [
+    # Include firmware update for Raspberry Pi 4.
+    "core/rpi-include-firmware",
+]
+
+[parameters."core/rpi-include-firmware"]
+model = "pi4"

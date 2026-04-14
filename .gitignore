@@ -1,6 +1,13 @@
 /.rugpi
+/.rugix
 /build
+build.log
 .image
 *.sbom.txt
 *.log
 *.env
+wordlist.txt
+
+# test keys
+id_rsa
+id_rsa.pub

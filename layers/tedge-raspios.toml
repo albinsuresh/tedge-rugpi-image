@@ -1,0 +1,23 @@
+#:schema https://raw.githubusercontent.com/rugix/rugix-bakery/refs/tags/v0.9.0/schemas/rugix-bakery-layer.schema.json
+parent = "tedge-rugix-core/raspios"
+
+recipes = [
+    "core/rpi-raspios-setup",
+    "tedge-rugix-core/defaults",
+    "tedge-rugix-core/raspi-tpm",
+    "tedge-rugix-core/setup-pkcs11",
+
+    # containers
+    "tedge-rugix-core/docker",
+
+    # Include u-boot setup on all image
+    # to avoid having to create a layer per-bootloader
+    # and it does not cause any negative effects
+    # including it for tryboot
+    "core/rpi-uboot-setup",
+
+    # SBOM
+    "rugix-extra/simple-sbom",
+
+    "user-packages",
+]
